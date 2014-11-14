@@ -8,6 +8,7 @@
         'kickers.controllers'
     ]);
 
+
     app.config(function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise("/home");
 

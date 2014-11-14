@@ -10,7 +10,7 @@
         return {
             restrict: 'E',
             templateUrl: 'partials/header.html'
-        }
+        };
     });
 
     /**
@@ -20,7 +20,7 @@
         return {
             restrict: 'E',
             templateUrl: 'partials/footer.html'
-        }
+        };
     });
 
 })();

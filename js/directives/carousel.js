@@ -15,6 +15,7 @@
                 scope.id = attrs.id;
                 scope.files = attrs.files;
             }
-        }
-    })
+        };
+    });
+
 })();
