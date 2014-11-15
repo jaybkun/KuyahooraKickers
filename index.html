@@ -1,23 +1,27 @@
 <html>
 <head>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="stylesheets/ie.css"/>
     <link rel="stylesheet" href="stylesheets/print.css"/>
     <link rel="stylesheet" href="stylesheets/screen.css"/>
     <link rel="stylesheet" href="stylesheets/kickers.css"/>
 
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
 </head>
-<body ng-app="kuyahoora.kickers">
+<body ng-app="kuyahooraKickers">
 
-<div class="wrapper">
+<div id="wrap">
     <kicker-header></kicker-header>
 
-    <div id="content" class="container">
-        <div ui-view ng-cloak></div>
+    <div class="container">
+        <div ui-view></div>
     </div>
 
+    <div id="push"></div>
 </div>
-<kicker-footer></kicker-footer>
+
+<div id="footer">
+    <kicker-footer></kicker-footer>
+</div>
 
 <!-- Scripts -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -27,7 +31,7 @@
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-<script src="dist/KuyahooraKickers.min.js" type="text/javascript"></script>
+<script src="dist/KuyahooraKickers.js" type="text/javascript"></script>
 
 <!-- Google Analytics -->
 <script>

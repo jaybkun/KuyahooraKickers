@@ -1,29 +1,98 @@
+$kicker-green: #0c2e33; //Kicker Green
+$kicker-green-lighter: #194146;
+$kicker-green-lightest: #2C5459;
+$kicker-green-darker: #031D20;
+$kicker-green-darkest: #000E10;
+
+$accent-tan: #533F12;
+$accent-tan-lighter: #725B27;
+$accent-tan-lightest: #917A47;
+$accent-tan-dark: #352504;
+$accent-tan-darkest: #1A1200;
+
+$accent-red: #531712;
+$accent-red-lighter: #722D27;
+$accent-red-lightest: #914C47;
+$accent-red-darker: #350804;
+$accent-red-darkest: #1A0200;
+// Color Scheme:http://paletton.com/#uid=33l0u0koWatgsigkYemtA6DD-3f
+
+
+$footer-height: 90px;
+
 html,
 body {
-  margin:0;
-  padding:0;
-  height:100%;
+  height: 100%;
+  background-color: $kicker-green-darker;
+  color: rgba(255, 255, 255, 0.5);
+  /* The html and body elements cannot have any padding or margin. */
 }
 
-#wrapper {
-  min-height:100%;
-  position:relative;
+h1,h2,h3,h4,h5,h6 {
+  color: $accent-red-lightest;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+}
+
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -90px;
 }
 
 #header {
-  background:#ff0;
-  padding:10px;
+  background-color: $kicker-green;
 }
 
-#content {
-  padding:10px;
-  //padding-bottom:90px;   /* Height of the footer */
+#header a {
+  color:$accent-tan-lightest;
+  background-color: $accent-tan-darkest;
+  margin: 0 1px;
 }
 
+#header a:hover {
+  background-color: $accent-tan;
+
+}
+
+
+
+/* Set the fixed height of the footer here */
+#push,
 #footer {
-  position:relative;
-  bottom:0;
-  width:100%;
-  height:90px;   /* Height of the footer */
-  background:#6cf;
+  height: 90px;
+}
+#footer {
+  border: 1px solid $accent-red-lighter;
+  background-color: $accent-red-darker;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+ul.eventsList {
+  list-style-type: none;
+  box-shadow: 2px 2px 5px 1px gray;
+}
+
+.eventsList li {
+  cursor: hand;
+  margin: 4px 0;
+}
+.eventsList li:hover {
+  background-color: $kicker-green;
+}
+
+.top-buffer {
+  margin-top:20px;
 }

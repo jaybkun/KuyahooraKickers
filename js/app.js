@@ -1,13 +1,12 @@
 (function() {
     'use strict';
 
-    var app = angular.module('kuyahoora.kickers', [
+    var app = angular.module('kuyahooraKickers', [
         'ngRoute',
         'ui.router', 'ui.bootstrap',
         'kickers.directives',
         'kickers.controllers'
     ]);
-
 
     app.config(function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise("/home");
@@ -17,14 +16,16 @@
                 url: "/home",
                 templateUrl: "partials/home.html",
                 controller: 'HomeController',
-                controllerAs: 'home'
+                controllerAs: 'homeCtrl'
             })
             .state('events', {
                 url: "/events",
-                templateUrl: "partials/events.html"
+                templateUrl: 'partials/events.html',
+                controller: 'EventsController',
+                controllerAs: 'eventsCtrl'
             })
             .state('calendar', {
-               url: "/calendar",
+                url: "/calendar",
                 templateUrl: "partials/calendar.html"
             });
     });
