@@ -4,6 +4,8 @@ $kicker-green-lightest: #2C5459;
 $kicker-green-darker: #031D20;
 $kicker-green-darkest: #000E10;
 
+$background: #E9ECED;
+
 $accent-tan: #533F12;
 $accent-tan-lighter: #725B27;
 $accent-tan-lightest: #917A47;
@@ -15,24 +17,19 @@ $accent-red-lighter: #722D27;
 $accent-red-lightest: #914C47;
 $accent-red-darker: #350804;
 $accent-red-darkest: #1A0200;
-// Color Scheme:http://paletton.com/#uid=33l0u0koWatgsigkYemtA6DD-3f
 
+// Color Scheme: http://paletton.com/#uid=33l0u0koWatgsigkYemtA6DD-3f
 
 $footer-height: 90px;
 
 html,
 body {
   height: 100%;
-  background-color: $kicker-green-darker;
-  color: rgba(255, 255, 255, 0.5);
-  /* The html and body elements cannot have any padding or margin. */
 }
 
-h1,h2,h3,h4,h5,h6 {
-  color: $accent-red-lightest;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+#centerContent {
+  height:100%;
 }
-
 
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -42,35 +39,14 @@ h1,h2,h3,h4,h5,h6 {
   /* Negative indent footer by it's height */
   margin: 0 auto -90px;
 }
-
-#header {
-  background-color: $kicker-green;
-}
-
-#header a {
-  color:$accent-tan-lightest;
-  background-color: $accent-tan-darkest;
-  margin: 0 1px;
-}
-
-#header a:hover {
-  background-color: $accent-tan;
-
-}
-
-
-
-/* Set the fixed height of the footer here */
 #push,
 #footer {
   height: 90px;
 }
 #footer {
-  border: 1px solid $accent-red-lighter;
-  background-color: $accent-red-darker;
+
 }
 
-/* Lastly, apply responsive CSS fixes as necessary */
 @media (max-width: 767px) {
   #footer {
     margin-left: -20px;
@@ -78,6 +54,10 @@ h1,h2,h3,h4,h5,h6 {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+.top-buffer {
+  margin-top:20px;
 }
 
 ul.eventsList {
@@ -90,9 +70,9 @@ ul.eventsList {
   margin: 4px 0;
 }
 .eventsList li:hover {
-  background-color: $kicker-green;
+  background-color: $background;
 }
 
-.top-buffer {
-  margin-top:20px;
+.eventsList li.active {
+  background-color: $background;
 }
