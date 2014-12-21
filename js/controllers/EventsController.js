@@ -12,12 +12,14 @@
 
         $scope.events = [
             {
-                title: 'Beer and Chili',
-                date:'February',
+                title: '31st Annual Beer and Chili 5k/10k Run & Walk',
+                date:'Saturday, February 27 2015',
+                time: '8:00 - 9:45 AM, Race begins at 10:00 AM',
                 timeOfYear: 'Winter',
                 distance:'5k/10k',
                 location:'Newport, NY',
-                description: "The Beer and Chili is an annual run starting in Newport where, naturally, beer and chili are available at the end.                The 5k and 10k courses go through the village of Newport with a challenging hill as part of the 10k course.All proceeds from the race go to local food pantries and other charitable organizations."
+                description: "The Beer and Chili is an annual run starting in Newport where, naturally, beer and chili are available at the end.                The 5k and 10k courses go through the village of Newport with a challenging hill as part of the 10k course.All proceeds from the race go to local food pantries and other charitable organizations.",
+                entryForm: 'resources/forms/BeerAndChili/BeerandChiliAppPDF.pdf'
             },
             {
                 title: 'Fireman\'s Field Days',

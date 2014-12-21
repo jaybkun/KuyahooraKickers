@@ -14,11 +14,13 @@
                 <div class="col-lg-9">
                     <div ng-hide="currentEvent == null">
                         {{currentEvent.description}}
+                        <div ng-show="currentEvent.entryForm">
+                            <a target="_blank" href="{{currentEvent.entryForm}}">Download the form here</a>
+                        </div>
                     </div>
                     <div ng-show="currentEvent == null">
                         The Kickers proudly host several events throughout the year and are often seen at other events in the area! Keep an eye out for us and say hi!
                     </div>
-
                 </div>
             </div>
         </div>
